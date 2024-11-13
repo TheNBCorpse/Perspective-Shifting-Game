@@ -529,7 +529,7 @@
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
-			"drawOrder": "z-order",
+			"drawOrder": "camera-distance",
 			"useRenderCells": false,
 			"blendMode": "normal",
 			"zElevation": 0,
@@ -640,5 +640,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "game_main"
+	"eventSheet": "{MAIN}"
 }

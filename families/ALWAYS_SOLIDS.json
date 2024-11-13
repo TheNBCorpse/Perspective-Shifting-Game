@@ -3,7 +3,13 @@
 	"plugin-id": "Shape3D",
 	"sid": 961680754253730,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 690824512952634
+		}
+	],
 	"effectTypes": [],
 	"members": [
 		"obj_testbox1"

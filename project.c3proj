@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 41200,
+	"savedWithRelease": 41500,
 	"name": "perspective shifting",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -78,6 +78,13 @@
 		},
 		{
 			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "gamepad",
 			"name": "Gamepad",
 			"author": "Scirra",
@@ -103,11 +110,20 @@
 			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "fogexponential",
+			"name": "Fog (exponential)",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "ucd4x7s6qmg",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"obj_testground"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -118,7 +134,7 @@
 					"info",
 					"keyboard",
 					"mouse",
-					"debugrecording"
+					"recording"
 				],
 				"subfolders": [],
 				"name": "plugins"
@@ -140,7 +156,8 @@
 			},
 			{
 				"items": [
-					"obj_testbox1"
+					"obj_testbox1",
+					"obj_testbox2"
 				],
 				"subfolders": [],
 				"name": "objects"
@@ -152,7 +169,8 @@
 	"families": {
 		"items": [
 			"OBJ_3D",
-			"ALWAYS_SOLIDS"
+			"ALWAYS_SOLIDS",
+			"DEPTH_SOLIDS"
 		],
 		"subfolders": []
 	},
@@ -161,7 +179,8 @@
 		"subfolders": [
 			{
 				"items": [
-					"test_debug1"
+					"test_debug1",
+					"test_debug2"
 				],
 				"subfolders": [],
 				"name": "tests"
@@ -173,9 +192,10 @@
 		"subfolders": [
 			{
 				"items": [
-					"game_controls",
-					"game_debug",
-					"game_main"
+					"{controls}",
+					"{debug}",
+					"{level}",
+					"{MAIN}"
 				],
 				"subfolders": [],
 				"name": "game"
@@ -331,7 +351,6 @@
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
-		"autoReloadScriptsOnPreview": false,
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
