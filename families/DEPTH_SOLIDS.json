@@ -1,0 +1,17 @@
+{
+	"name": "DEPTH_SOLIDS",
+	"plugin-id": "Shape3D",
+	"sid": 350594926015241,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 625560843214887
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"obj_testbox2"
+	]
+}

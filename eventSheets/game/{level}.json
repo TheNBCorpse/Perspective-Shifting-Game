@@ -1,0 +1,93 @@
+{
+	"name": "{level}",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "blocks",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 345226129973523,
+							"parameters": {
+								"object": "DEPTH_SOLIDS"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 830577610827277,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-z-elevation",
+									"objectClass": "DEPTH_SOLIDS",
+									"sid": 704193565382074,
+									"parameters": {
+										"which": "z-elevation",
+										"comparison": 4,
+										"z-elevation": "player_collision.ZElevation + 45"
+									}
+								},
+								{
+									"id": "compare-z-elevation",
+									"objectClass": "DEPTH_SOLIDS",
+									"sid": 276601646376829,
+									"parameters": {
+										"which": "z-elevation",
+										"comparison": 2,
+										"z-elevation": "player_collision.ZElevation - Self.ZHeight"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "DEPTH_SOLIDS",
+									"sid": 287979936354160,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "disabled"
+									}
+								}
+							],
+							"sid": 755765833390214,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 222859004566622
+								}
+							],
+							"actions": [
+								{
+									"id": "set-enabled",
+									"objectClass": "DEPTH_SOLIDS",
+									"sid": 142170601475577,
+									"behaviorType": "Solid",
+									"parameters": {
+										"state": "enabled"
+									}
+								}
+							],
+							"sid": 971382600761436
+						}
+					]
+				}
+			],
+			"sid": 673012902358045
+		}
+	],
+	"sid": 666435318048581
+}
