@@ -3,7 +3,22 @@
 	"plugin-id": "Sprite",
 	"sid": 463365627691890,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "grounded",
+			"type": "boolean",
+			"desc": "",
+			"show": true,
+			"sid": 459013084470957
+		},
+		{
+			"name": "vectorZ",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 340326271079310
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Tween",

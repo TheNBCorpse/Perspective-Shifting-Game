@@ -18,7 +18,10 @@
 					"uid": 9,
 					"sid": 636832515451797,
 					"tags": "",
-					"instanceVariables": {},
+					"instanceVariables": {
+						"grounded": false,
+						"vectorZ": 0
+					},
 					"behaviors": {
 						"TweenCamera": {
 							"properties": {
