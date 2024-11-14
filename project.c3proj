@@ -110,20 +110,11 @@
 			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
-		},
-		{
-			"type": "effect",
-			"id": "fogexponential",
-			"name": "Fog (exponential)",
-			"author": "Scirra",
-			"bundled": false
 		}
 	],
 	"uniqueId": "ucd4x7s6qmg",
 	"objectTypes": {
-		"items": [
-			"obj_testground"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -157,7 +148,7 @@
 			{
 				"items": [
 					"obj_testbox1",
-					"obj_testbox2"
+					"obj_testground"
 				],
 				"subfolders": [],
 				"name": "objects"
@@ -169,7 +160,6 @@
 	"families": {
 		"items": [
 			"OBJ_3D",
-			"ALWAYS_SOLIDS",
 			"DEPTH_SOLIDS"
 		],
 		"subfolders": []

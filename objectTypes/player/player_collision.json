@@ -17,6 +17,13 @@
 			"desc": "",
 			"show": true,
 			"sid": 340326271079310
+		},
+		{
+			"name": "jumps",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 598369886475609
 		}
 	],
 	"behaviorTypes": [

@@ -39,11 +39,11 @@
 								{
 									"id": "compare-z-elevation",
 									"objectClass": "DEPTH_SOLIDS",
-									"sid": 276601646376829,
+									"sid": 133370299867053,
 									"parameters": {
 										"which": "z-elevation",
 										"comparison": 2,
-										"z-elevation": "player_collision.ZElevation - Self.ZHeight"
+										"z-elevation": "player_collision.ZElevation - Self.ZHeight + 1"
 									}
 								}
 							],

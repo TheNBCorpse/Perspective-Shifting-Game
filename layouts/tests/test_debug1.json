@@ -20,7 +20,8 @@
 					"tags": "",
 					"instanceVariables": {
 						"grounded": false,
-						"vectorZ": 0
+						"vectorZ": 0,
+						"jumps": 0
 					},
 					"behaviors": {
 						"TweenCamera": {

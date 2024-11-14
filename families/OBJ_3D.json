@@ -6,7 +6,6 @@
 	"behaviorTypes": [],
 	"effectTypes": [],
 	"members": [
-		"obj_testbox1",
-		"obj_testbox2"
+		"obj_testbox1"
 	]
 }
