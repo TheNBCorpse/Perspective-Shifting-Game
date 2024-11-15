@@ -29,20 +29,20 @@
 								{
 									"id": "compare-z-elevation",
 									"objectClass": "DEPTH_SOLIDS",
-									"sid": 704193565382074,
+									"sid": 606193778372904,
 									"parameters": {
 										"which": "z-elevation",
-										"comparison": 4,
-										"z-elevation": "player_collision.ZElevation + 45"
+										"comparison": 5,
+										"z-elevation": "player_collision.ZElevation + 55"
 									}
 								},
 								{
 									"id": "compare-z-elevation",
 									"objectClass": "DEPTH_SOLIDS",
-									"sid": 133370299867053,
+									"sid": 756302330947700,
 									"parameters": {
 										"which": "z-elevation",
-										"comparison": 2,
+										"comparison": 3,
 										"z-elevation": "player_collision.ZElevation - Self.ZHeight + 1"
 									}
 								}
@@ -56,6 +56,14 @@
 									"parameters": {
 										"state": "disabled"
 									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "DEPTH_SOLIDS",
+									"sid": 723974968537386,
+									"parameters": {
+										"opacity": "50"
+									}
 								}
 							],
 							"sid": 755765833390214,
@@ -68,6 +76,15 @@
 									"id": "else",
 									"objectClass": "System",
 									"sid": 222859004566622
+								},
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "player_collision",
+									"sid": 594739922129616,
+									"parameters": {
+										"object": "DEPTH_SOLIDS"
+									},
+									"isInverted": true
 								}
 							],
 							"actions": [
@@ -78,6 +95,14 @@
 									"behaviorType": "Solid",
 									"parameters": {
 										"state": "enabled"
+									}
+								},
+								{
+									"id": "set-opacity",
+									"objectClass": "DEPTH_SOLIDS",
+									"sid": 894958234423329,
+									"parameters": {
+										"opacity": "100"
 									}
 								}
 							],

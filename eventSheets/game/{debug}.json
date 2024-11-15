@@ -37,9 +37,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "text_debug",
-					"sid": 513003603281886,
+					"sid": 328933634078439,
 					"parameters": {
-						"text": "info.FramesPerSecond & \" FPS/\" & info.TicksPerSecond & \" TPS\" & newline & roundToDp(cpuutilisation, 1) & \"% cpu/ \" & roundToDp(gpuutilisation, 1) & \"% gpu\" & newline & info.RendererDetail & \" (\" & info.Renderer & \", \" & browser.Platform & \")\" & newline & browser.UserAgent & newline & info.HardwareConcurrency & \" threads, \" & info.DeviceMemory & \" gb ram\" & newline & info.ScreenWidth & \" x \" & info.ScreenHeight & \" screen, \" & info.CanvasDeviceWidth & \" x \" & info.CanvasDeviceHeight & \" canvas\" & newline & info.WindowOuterWidth & \" x \" & info.WindowOuterHeight & \" window, \" & info.WindowInnerWidth & \" x \" & info.WindowInnerHeight & \" client\" & newline & keyboard.LastKeyCode & newline & camera.FieldOfView"
+						"text": "info.FramesPerSecond & \" FPS/\" & info.TicksPerSecond & \" TPS\" & newline & roundToDp(cpuutilisation, 1) & \"% cpu/ \" & roundToDp(gpuutilisation, 1) & \"% gpu\" & newline & info.RendererDetail & \" (\" & info.Renderer & \", \" & browser.Platform & \")\" & newline & browser.UserAgent & newline & info.HardwareConcurrency & \" threads, \" & info.DeviceMemory & \" gb ram\" & newline & info.ScreenWidth & \" x \" & info.ScreenHeight & \" screen, \" & info.CanvasDeviceWidth & \" x \" & info.CanvasDeviceHeight & \" canvas\" & newline & info.WindowOuterWidth & \" x \" & info.WindowOuterHeight & \" window, \" & info.WindowInnerWidth & \" x \" & info.WindowInnerHeight & \" client\" & newline & keyboard.LastKeyCode & newline & camera.FieldOfView & newline & dt"
 					}
 				},
 				{
