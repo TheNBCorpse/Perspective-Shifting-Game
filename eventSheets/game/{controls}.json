@@ -1203,6 +1203,7 @@
 							"id": "set-z-elevation",
 							"objectClass": "player_collision",
 							"sid": 782103858987258,
+							"disabled": true,
 							"parameters": {
 								"z": "clamp(Self.ZElevation + Self.vectorZ, 0, Infinity)"
 							}
@@ -1211,7 +1212,6 @@
 							"id": "set-z-elevation",
 							"objectClass": "player_collision",
 							"sid": 507797875443479,
-							"disabled": true,
 							"parameters": {
 								"z": "Self.ZElevation + Self.vectorZ"
 							}
@@ -1219,10 +1219,20 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "player_collision",
-							"sid": 981009545499597,
+							"sid": 502037559943289,
+							"disabled": true,
 							"parameters": {
 								"instance-variable": "vectorZ",
-								"value": "clamp(Self.vectorZ, -8, 8)"
+								"value": "clamp(Self.vectorZ, -5, 8)"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "player_collision",
+							"sid": 962192994126165,
+							"parameters": {
+								"instance-variable": "vectorZ",
+								"value": "clamp(Self.vectorZ, -9, 9)"
 							}
 						}
 					],
@@ -1365,11 +1375,11 @@
 						{
 							"id": "compare-z-elevation",
 							"objectClass": "DEPTH_SOLIDS",
-							"sid": 981174796232085,
+							"sid": 412401483194647,
 							"parameters": {
 								"which": "z-elevation",
 								"comparison": 3,
-								"z-elevation": "player_collision.ZElevation - Self.ZHeight + 5"
+								"z-elevation": "player_collision.ZElevation - Self.ZHeight + 10"
 							}
 						}
 					],

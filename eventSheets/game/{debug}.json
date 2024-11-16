@@ -62,6 +62,7 @@
 							"id": "compare-two-values",
 							"objectClass": "System",
 							"sid": 217614240999157,
+							"disabled": true,
 							"parameters": {
 								"first-value": "LayoutName",
 								"comparison": 1,

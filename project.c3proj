@@ -110,6 +110,13 @@
 			"name": "Solid",
 			"author": "Scirra",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "tint",
+			"name": "Tint",
+			"author": "Scirra",
+			"bundled": false
 		}
 	],
 	"uniqueId": "ucd4x7s6qmg",
@@ -166,7 +173,8 @@
 			},
 			{
 				"items": [
-					"mesh_bricks1"
+					"mesh_bricks1",
+					"mesh_corner1"
 				],
 				"subfolders": [],
 				"name": "meshes"
