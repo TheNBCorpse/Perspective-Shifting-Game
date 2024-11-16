@@ -1,0 +1,14 @@
+{
+	"name": "TEXTURES",
+	"plugin-id": "Sprite",
+	"sid": 365741439139346,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"texture_ground1",
+		"texture_bricks1",
+		"texture_bricks2",
+		"texture_bricks3"
+	]
+}
