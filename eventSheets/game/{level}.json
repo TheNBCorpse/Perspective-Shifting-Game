@@ -29,21 +29,21 @@
 								{
 									"id": "compare-z-elevation",
 									"objectClass": "DEPTH_SOLIDS",
-									"sid": 606193778372904,
+									"sid": 148071619898658,
 									"parameters": {
 										"which": "z-elevation",
-										"comparison": 5,
+										"comparison": 4,
 										"z-elevation": "player_collision.ZElevation + 55"
 									}
 								},
 								{
 									"id": "compare-z-elevation",
 									"objectClass": "DEPTH_SOLIDS",
-									"sid": 756302330947700,
+									"sid": 478215913003006,
 									"parameters": {
 										"which": "z-elevation",
-										"comparison": 3,
-										"z-elevation": "player_collision.ZElevation - Self.ZHeight + 1"
+										"comparison": 2,
+										"z-elevation": "player_collision.ZElevation - Self.ZHeight + 6"
 									}
 								}
 							],
@@ -61,6 +61,7 @@
 									"id": "set-opacity",
 									"objectClass": "DEPTH_SOLIDS",
 									"sid": 723974968537386,
+									"disabled": true,
 									"parameters": {
 										"opacity": "50"
 									}
@@ -101,6 +102,7 @@
 									"id": "set-opacity",
 									"objectClass": "DEPTH_SOLIDS",
 									"sid": 894958234423329,
+									"disabled": true,
 									"parameters": {
 										"opacity": "100"
 									}
@@ -112,6 +114,46 @@
 				}
 			],
 			"sid": 673012902358045
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "textures",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 203143869318644
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "TEXTURES",
+							"sid": 915989436984619,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						},
+						{
+							"id": "set-position",
+							"objectClass": "TEXTURES",
+							"sid": 545362671646111,
+							"parameters": {
+								"x": "-2000",
+								"y": "-2000"
+							}
+						}
+					],
+					"sid": 439978193048418
+				}
+			],
+			"sid": 923779818673059
 		}
 	],
 	"sid": 666435318048581

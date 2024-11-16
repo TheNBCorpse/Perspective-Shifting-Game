@@ -23,6 +23,16 @@
 						"comparison": 0,
 						"second-value": "\"test_debug2\""
 					}
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 654434328834484,
+					"parameters": {
+						"first-value": "LayoutName",
+						"comparison": 0,
+						"second-value": "\"test_debug3\""
+					}
 				}
 			],
 			"actions": [
@@ -37,21 +47,41 @@
 				{
 					"id": "set-text",
 					"objectClass": "text_debug",
-					"sid": 328933634078439,
+					"sid": 498777792715544,
 					"parameters": {
-						"text": "info.FramesPerSecond & \" FPS/\" & info.TicksPerSecond & \" TPS\" & newline & roundToDp(cpuutilisation, 1) & \"% cpu/ \" & roundToDp(gpuutilisation, 1) & \"% gpu\" & newline & info.RendererDetail & \" (\" & info.Renderer & \", \" & browser.Platform & \")\" & newline & browser.UserAgent & newline & info.HardwareConcurrency & \" threads, \" & info.DeviceMemory & \" gb ram\" & newline & info.ScreenWidth & \" x \" & info.ScreenHeight & \" screen, \" & info.CanvasDeviceWidth & \" x \" & info.CanvasDeviceHeight & \" canvas\" & newline & info.WindowOuterWidth & \" x \" & info.WindowOuterHeight & \" window, \" & info.WindowInnerWidth & \" x \" & info.WindowInnerHeight & \" client\" & newline & keyboard.LastKeyCode & newline & camera.FieldOfView & newline & dt"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "player_collision",
-					"sid": 814485583366195,
-					"parameters": {
-						"visibility": "visible"
+						"text": "info.FramesPerSecond & \" FPS/\" & info.TicksPerSecond & \" TPS\" & newline & roundToDp(cpuutilisation, 1) & \"% cpu/ \" & roundToDp(gpuutilisation, 1) & \"% gpu\" & newline & info.RendererDetail & \" (\" & info.Renderer & \", \" & browser.Platform & \")\" & newline & browser.UserAgent & newline & info.HardwareConcurrency & \" threads, \" & info.DeviceMemory & \" gb ram\" & newline & info.ScreenWidth & \" x \" & info.ScreenHeight & \" screen, \" & info.CanvasDeviceWidth & \" x \" & info.CanvasDeviceHeight & \" canvas\" & newline & info.WindowOuterWidth & \" x \" & info.WindowOuterHeight & \" window, \" & info.WindowInnerWidth & \" x \" & info.WindowInnerHeight & \" client\" & newline & keyboard.LastKeyCode & newline & camera.FieldOfView & \", \" & camera.DefaultCameraZ & newline & dt"
 					}
 				}
 			],
 			"sid": 192225258194177,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 217614240999157,
+							"parameters": {
+								"first-value": "LayoutName",
+								"comparison": 1,
+								"second-value": "\"test_debug3\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "player_collision",
+							"sid": 494110253900094,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 868164691635723
+				}
+			],
 			"isOrBlock": true
 		},
 		{

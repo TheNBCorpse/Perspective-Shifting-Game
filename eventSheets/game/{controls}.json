@@ -518,10 +518,10 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "player_collision",
-							"sid": 659241760578524,
+							"sid": 663107812672517,
 							"parameters": {
 								"instance-variable": "vectorZ",
-								"value": "8"
+								"value": "6"
 							}
 						}
 					],
@@ -1102,11 +1102,11 @@
 						{
 							"id": "set-position",
 							"objectClass": "camera",
-							"sid": 839853760389535,
+							"sid": 865678031017177,
 							"parameters": {
 								"x": "player_collision.X",
 								"y": "player_collision.Y",
-								"z": "lerp(Self.CameraZ, player_collision.ZElevation + 40, 30 * dt)",
+								"z": "lerp(Self.CameraZ, player_collision.ZElevation + 40, 20 * dt)",
 								"which": "camera"
 							}
 						},
@@ -1193,18 +1193,36 @@
 						{
 							"id": "subtract-from-instvar",
 							"objectClass": "player_collision",
-							"sid": 723020240267653,
+							"sid": 617999389017386,
 							"parameters": {
 								"instance-variable": "vectorZ",
-								"value": "0.4 * gravity"
+								"value": "0.25 * gravity"
 							}
 						},
 						{
 							"id": "set-z-elevation",
 							"objectClass": "player_collision",
-							"sid": 975633050057754,
+							"sid": 782103858987258,
+							"parameters": {
+								"z": "clamp(Self.ZElevation + Self.vectorZ, 0, Infinity)"
+							}
+						},
+						{
+							"id": "set-z-elevation",
+							"objectClass": "player_collision",
+							"sid": 507797875443479,
+							"disabled": true,
 							"parameters": {
 								"z": "Self.ZElevation + Self.vectorZ"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "player_collision",
+							"sid": 981009545499597,
+							"parameters": {
+								"instance-variable": "vectorZ",
+								"value": "clamp(Self.vectorZ, -8, 8)"
 							}
 						}
 					],
@@ -1216,10 +1234,113 @@
 						{
 							"id": "compare-instance-variable",
 							"objectClass": "player_collision",
-							"sid": 935829835369131,
+							"sid": 916353591241136,
 							"parameters": {
 								"instance-variable": "vectorZ",
-								"comparison": 2,
+								"comparison": 3,
+								"value": "0"
+							}
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "player_collision",
+							"sid": 927244941311197,
+							"parameters": {
+								"object": "DEPTH_SOLIDS"
+							}
+						},
+						{
+							"id": "compare-z-elevation",
+							"objectClass": "DEPTH_SOLIDS",
+							"sid": 356109998786391,
+							"parameters": {
+								"which": "z-elevation",
+								"comparison": 5,
+								"z-elevation": "player_collision.ZElevation - Self.ZHeight"
+							}
+						},
+						{
+							"id": "compare-z-elevation",
+							"objectClass": "DEPTH_SOLIDS",
+							"sid": 254692664220241,
+							"parameters": {
+								"which": "z-elevation",
+								"comparison": 3,
+								"z-elevation": "player_collision.ZElevation - Self.ZHeight + 5"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "player_collision",
+							"sid": 588733224913570,
+							"parameters": {
+								"instance-variable": "grounded",
+								"value": "true"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "player_collision",
+							"sid": 458994482101222,
+							"parameters": {
+								"instance-variable": "vectorZ",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "player_collision",
+							"sid": 807310591455272,
+							"parameters": {
+								"instance-variable": "jumps",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 834499027792975,
+					"disabled": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-highest-lowest-value",
+									"objectClass": "System",
+									"sid": 877784215932787,
+									"parameters": {
+										"object": "DEPTH_SOLIDS",
+										"which": "highest",
+										"expression": "DEPTH_SOLIDS.ZElevation + DEPTH_SOLIDS.ZHeight"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-z-elevation",
+									"objectClass": "player_collision",
+									"sid": 815008625657756,
+									"parameters": {
+										"z": "DEPTH_SOLIDS.ZElevation + DEPTH_SOLIDS.ZHeight"
+									}
+								}
+							],
+							"sid": 985840763829903,
+							"disabled": true
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "player_collision",
+							"sid": 105642314154382,
+							"parameters": {
+								"instance-variable": "vectorZ",
+								"comparison": 3,
 								"value": "0"
 							}
 						},
@@ -1279,17 +1400,37 @@
 								"instance-variable": "jumps",
 								"value": "1"
 							}
-						},
-						{
-							"id": "set-z-elevation",
-							"objectClass": "player_collision",
-							"sid": 993771537358076,
-							"parameters": {
-								"z": "DEPTH_SOLIDS.ZElevation + DEPTH_SOLIDS.ZHeight"
-							}
 						}
 					],
-					"sid": 542685786234611
+					"sid": 542685786234611,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-by-highest-lowest-value",
+									"objectClass": "System",
+									"sid": 126057225120971,
+									"parameters": {
+										"object": "DEPTH_SOLIDS",
+										"which": "highest",
+										"expression": "DEPTH_SOLIDS.ZElevation + DEPTH_SOLIDS.ZHeight"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-z-elevation",
+									"objectClass": "player_collision",
+									"sid": 349727298102456,
+									"parameters": {
+										"z": "DEPTH_SOLIDS.ZElevation + DEPTH_SOLIDS.ZHeight"
+									}
+								}
+							],
+							"sid": 920046863075246
+						}
+					]
 				},
 				{
 					"eventType": "block",

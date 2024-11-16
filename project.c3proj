@@ -148,10 +148,28 @@
 			{
 				"items": [
 					"obj_testbox1",
-					"obj_testground"
+					"obj_testground",
+					"obj_testbox2"
 				],
 				"subfolders": [],
 				"name": "objects"
+			},
+			{
+				"items": [
+					"texture_ground1",
+					"texture_bricks1",
+					"texture_bricks2",
+					"texture_bricks3"
+				],
+				"subfolders": [],
+				"name": "textures"
+			},
+			{
+				"items": [
+					"mesh_bricks1"
+				],
+				"subfolders": [],
+				"name": "meshes"
 			}
 		]
 	},
@@ -160,7 +178,8 @@
 	"families": {
 		"items": [
 			"OBJ_3D",
-			"DEPTH_SOLIDS"
+			"DEPTH_SOLIDS",
+			"TEXTURES"
 		],
 		"subfolders": []
 	},
@@ -170,7 +189,8 @@
 			{
 				"items": [
 					"test_debug1",
-					"test_debug2"
+					"test_debug2",
+					"test_debug3"
 				],
 				"subfolders": [],
 				"name": "tests"
@@ -330,7 +350,7 @@
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
 		"framerateMode": "vsync",
-		"sampling": "trilinear",
+		"sampling": "nearest",
 		"downscaling": "medium",
 		"renderingMode": "3d",
 		"anisotropicFiltering": "auto",
