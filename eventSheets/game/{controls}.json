@@ -518,10 +518,10 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "player_collision",
-							"sid": 663107812672517,
+							"sid": 255768067794583,
 							"parameters": {
 								"instance-variable": "vectorZ",
-								"value": "6"
+								"value": "9"
 							}
 						}
 					],
@@ -1174,9 +1174,9 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 511408903873686,
+							"sid": 648333340068745,
 							"parameters": {
-								"interval-seconds": "1/60"
+								"interval-seconds": "1/30"
 							}
 						},
 						{
@@ -1193,10 +1193,10 @@
 						{
 							"id": "subtract-from-instvar",
 							"objectClass": "player_collision",
-							"sid": 617999389017386,
+							"sid": 827160123234222,
 							"parameters": {
 								"instance-variable": "vectorZ",
-								"value": "0.25 * gravity"
+								"value": "0.6 * gravity"
 							}
 						},
 						{
