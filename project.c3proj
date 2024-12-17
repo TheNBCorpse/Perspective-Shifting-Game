@@ -167,7 +167,9 @@
 					"texture_ground1",
 					"texture_bricks1",
 					"texture_bricks2",
-					"texture_bricks3"
+					"texture_bricks3",
+					"texture_bricks4",
+					"texture_bricks5"
 				],
 				"subfolders": [],
 				"name": "textures"

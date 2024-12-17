@@ -65,86 +65,6 @@
 					}
 				},
 				{
-					"type": "texture_ground1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 41,
-					"sid": 226475439428170,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 226475439428170,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": -558,
-						"y": -835,
-						"width": 1920,
-						"height": 1080,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "texture_bricks1",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 43,
-					"sid": 875013770364802,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 875013770364802,
-						"expanded": true,
-						"folderName": "",
-						"indexInFolder": -1,
-						"folderNestingLevel": -1
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 792,
-						"y": -591,
-						"width": 480,
-						"height": 480,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "player_collision",
 					"properties": {
 						"initially-visible": false,
@@ -17884,7 +17804,7 @@
 							1
 						],
 						"angle": 0,
-						"zElevation": 0
+						"zElevation": 0.1
 					}
 				}
 			],
@@ -17938,7 +17858,7 @@
 						"object-back": -1,
 						"object-front": 129625802086921,
 						"object-left": -1,
-						"object-right": 129625802086921,
+						"object-right": 504898257465841,
 						"object-top": 129625802086921,
 						"object-bottom": 129625802086921
 					},
@@ -17995,7 +17915,7 @@
 						"z-tiling-factor": 8,
 						"object-back": -1,
 						"object-front": 129625802086921,
-						"object-left": 129625802086921,
+						"object-left": 504898257465841,
 						"object-right": 129625802086921,
 						"object-top": 129625802086921,
 						"object-bottom": 129625802086921
@@ -18447,6 +18367,166 @@
 						"y": -535,
 						"width": 480,
 						"height": 240,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "texture_ground1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 41,
+					"sid": 226475439428170,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 226475439428170,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": -558,
+						"y": -835,
+						"width": 1920,
+						"height": 1080,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "texture_bricks1",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 43,
+					"sid": 875013770364802,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 875013770364802,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 792,
+						"y": -591,
+						"width": 480,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "texture_bricks4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 86,
+					"sid": 120545120523182,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 120545120523182,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1348,
+						"y": -822,
+						"width": 480,
+						"height": 480,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "texture_bricks5",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 87,
+					"sid": 445682847446385,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"instanceFolderItem": {
+						"sid": 445682847446385,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 1937,
+						"y": -868,
+						"width": 480,
+						"height": 80,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -18927,7 +19007,7 @@
 					"type": "mesh_bricks1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Animation 2",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -19297,7 +19377,7 @@
 						"face-top": true,
 						"face-bottom": false,
 						"z-tiling-factor": 8,
-						"object-back": 129625802086921,
+						"object-back": 504898257465841,
 						"object-front": 129625802086921,
 						"object-left": 981725481350416,
 						"object-right": 981725481350416,
@@ -19571,7 +19651,7 @@
 					"type": "mesh_bricks1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Animation 2",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -19649,7 +19729,7 @@
 					"type": "mesh_bricks1",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Animation 2",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -19961,7 +20041,7 @@
 						"face-top": true,
 						"face-bottom": true,
 						"z-tiling-factor": 8,
-						"object-back": 129625802086921,
+						"object-back": 504898257465841,
 						"object-front": 129625802086921,
 						"object-left": 619486256759004,
 						"object-right": 619486256759004,
@@ -20019,7 +20099,7 @@
 						"face-top": true,
 						"face-bottom": true,
 						"z-tiling-factor": 8,
-						"object-back": 129625802086921,
+						"object-back": 504898257465841,
 						"object-front": 129625802086921,
 						"object-left": 619486256759004,
 						"object-right": 619486256759004,
