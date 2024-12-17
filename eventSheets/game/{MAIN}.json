@@ -7,7 +7,7 @@
 		},
 		{
 			"eventType": "include",
-			"includeSheet": "{controls}"
+			"includeSheet": "{player}"
 		},
 		{
 			"eventType": "include",

@@ -140,7 +140,8 @@
 			{
 				"items": [
 					"player_collision",
-					"player_camerarotation"
+					"player_camerarotation",
+					"player_shadow"
 				],
 				"subfolders": [],
 				"name": "player"
@@ -210,7 +211,7 @@
 		"subfolders": [
 			{
 				"items": [
-					"{controls}",
+					"{player}",
 					"{debug}",
 					"{level}",
 					"{MAIN}"
